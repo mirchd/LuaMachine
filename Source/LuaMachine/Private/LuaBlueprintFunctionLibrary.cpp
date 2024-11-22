@@ -28,6 +28,10 @@
 #include "Serialization/ArrayReader.h"
 #include "TextureResource.h"
 
+#if ENGINE_MAJOR_VERSION >= 5 && ENGINE_MINOR_VERSION >= 5
+#include "Engine/BlueprintGeneratedClass.h"
+#endif
+
 FLuaValue ULuaBlueprintFunctionLibrary::LuaCreateNil()
 {
 	return FLuaValue();
